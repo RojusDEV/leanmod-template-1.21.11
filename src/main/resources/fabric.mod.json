@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "leanmod",
+	"version": "${version}",
+	"name": "LeanMod",
+	"description": "This is mod for Rojus personal use",
+	"authors": [
+		"Rojka"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/leanmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.rojus.learn.LeanMod"
+		],
+		"fabric-datagen": [
+			"net.rojus.learn.LeanModDataGenerator"
+		],
+		"client": [
+			"net.rojus.learn.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"leanmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
