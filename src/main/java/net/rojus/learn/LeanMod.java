@@ -2,6 +2,7 @@ package net.rojus.learn;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.rojus.learn.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class LeanMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
